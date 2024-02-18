@@ -15,7 +15,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - chmod +x gradlew
-      - ./gradlew bmonz:bootBuildImage --imageName=$IMAGE_NAME:$IMAGE_TAG
+      - ./gradlew bootBuildImage --imageName=$IMAGE_NAME:$IMAGE_TAG
       - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$BUILD_TAG
   post_build:
     commands:
