@@ -19,7 +19,15 @@ public class MemberController {
     @PostMapping("/signup")
     public ResponseEntity<?> signup() {
 
-        log.info("logging test");
+        log.info("signup test");
         return new ResponseEntity<>("signup BMONZ", HttpStatus.OK);
+    }
+
+    @Operation(summary = "BMONZ 로그인", description = "로그인 한다.")
+    @PostMapping("/login")
+    public ResponseEntity<?> login() {
+
+        log.info("login test");
+        return new ResponseEntity<>("login BMONZ", HttpStatus.OK);
     }
 }
