@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-@RequestMapping("/bmonz")
 public class MemberController {
 
     @Operation(summary = "BMONZ 회원가입", description = "신규 계정을 생성한다.")
