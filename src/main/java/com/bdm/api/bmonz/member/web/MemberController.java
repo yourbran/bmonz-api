@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -19,7 +18,7 @@ public class MemberController {
     public ResponseEntity<?> signup() {
 
         log.info("signup test");
-        return new ResponseEntity<>("signup BMONZ", HttpStatus.OK);
+        return new ResponseEntity<>("signup BMONZ deloyment automation Test", HttpStatus.OK);
     }
 
     @Operation(summary = "BMONZ 로그인", description = "로그인 한다.")
