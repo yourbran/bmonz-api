@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    - location: /scripts/ecr-login.sh
+  AfterInstall:
+    - location: /scripts/bmonz-pull-and-run.sh
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
