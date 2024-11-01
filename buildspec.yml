@@ -29,7 +29,6 @@ artifacts:
     - scripts/bmonz-pull-and-run.sh
     - scripts/ecr-login.sh
     - appspec.yml
-  discard-paths: yes
 
 cache:
   paths:
