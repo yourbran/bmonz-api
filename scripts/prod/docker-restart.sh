@@ -15,4 +15,4 @@ docker rmi 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz
 docker pull 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz:latest
 
 # Run docker process
-docker run -d --name bmonz -p 5060:8080 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz
+docker run -d --name bmonz -p 5061:8080 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz
