@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-    - location: /scripts/ecr-login.sh
+    - location: /ecr-login.sh
   AfterInstall:
-    - location: /scripts/bmonz-pull-and-run.sh
+    - location: /docker-restart.sh
 
 permissions:
   - object: /
