@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # ECR login
 echo $(pwd)

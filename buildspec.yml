@@ -26,9 +26,9 @@ phases:
 # CodeDeploy 연계를 위한 appspec 및 scripts 생성
 artifacts:
   files:
-    - scripts/bmonz-pull-and-run.sh
-    - scripts/ecr-login.sh
-    - appspec.yml
+    - scripts/common/ecr-login.sh
+    - scripts/$CONFIG_ENV/docker-restart.sh
+    - scripts/$CONFIG_ENV/appspec.yml
 
 cache:
   paths:
