@@ -24,11 +24,13 @@ phases:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
 
 # CodeDeploy 연계를 위한 appspec 및 scripts 생성
+## appspec은 root directory에 위치해야 하므로 discard-paths 적용
 artifacts:
   files:
     - scripts/common/ecr-login.sh
     - scripts/$CONFIG_ENV/docker-restart.sh
     - scripts/$CONFIG_ENV/appspec.yml
+  discard-paths: yes
 
 cache:
   paths:
