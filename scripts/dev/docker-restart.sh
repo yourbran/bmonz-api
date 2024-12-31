@@ -9,10 +9,10 @@ docker stop devbmonz
 docker rm devbmonz
 
 # Remove bmonz image
-docker rmi 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz
+docker rmi 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz:dev-latest
 
 # Pull bmonz image from ECR
-docker pull 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz:latest
+docker pull 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz:dev-latest
 
 # Run docker process
-docker run -d --name devbmonz -p 5060:8080 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz
+docker run -d --name devbmonz -p 5060:8080 489701125781.dkr.ecr.ap-northeast-2.amazonaws.com/blogmon/bmonz:dev-latest
