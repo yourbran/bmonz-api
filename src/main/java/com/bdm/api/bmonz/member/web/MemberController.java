@@ -18,7 +18,7 @@ public class MemberController {
     public ResponseEntity<?> signup() {
 
         log.info("signup test");
-        return new ResponseEntity<>("signup BMONZ deloyment automation Test", HttpStatus.OK);
+        return new ResponseEntity<>("signup BMONZ deloyment automation Test 20241231", HttpStatus.OK);
     }
 
     @Operation(summary = "BMONZ 로그인", description = "로그인 한다.")
