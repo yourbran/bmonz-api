@@ -17,8 +17,8 @@ public class MemberController {
     @PostMapping("/signup")
     public ResponseEntity<?> signup() {
 
-        log.info("signup test");
-        return new ResponseEntity<>("signup BMONZ deloyment automation Test 20241231", HttpStatus.OK);
+        log.info("signup CI/CD 테스트");
+        return new ResponseEntity<>("signup CI/CD 테스트", HttpStatus.OK);
     }
 
     @Operation(summary = "BMONZ 로그인", description = "로그인 한다.")
